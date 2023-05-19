@@ -100,6 +100,7 @@ public class AdminServlet extends HttpServlet {
                     response.sendRedirect(request.getContextPath()+"/changeRole");
                 }
                 break;
+                
         }
     }
 
