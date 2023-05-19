@@ -92,6 +92,7 @@ public class AdminServlet extends HttpServlet {
                         user.getRoles().remove(roleName);
                     }
                 }
+                
                 userFacade.edit(user);
                 if(!Objects.equals(user.getId(), authUser.getId())){
                     request.getRequestDispatcher("/changeRole").forward(request, response);
